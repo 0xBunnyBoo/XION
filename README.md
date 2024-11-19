@@ -44,3 +44,21 @@ Flags:
       --trace               print out full stack trace on errors
 
 Use "xiond [command] --help" for more information about a command.
+xiond keys add <alias>
+> xiond keys add mywallet
+
+- address: xion1l3r75pkwlg2fmasn9lk8umda0pjnjy7cq0x9gz
+  name: mywallet
+  pubkey: '{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"A20kOEVZuZxVGdQiFExGsO7fO+4B+QbTRJYhvaRSMkWy"}'
+  type: local
+
+**Important** write this mnemonic phrase in a safe place.
+It is the only way to recover your account if you ever forget your password.
+
+trend express cheap ... room upset hair
+> xiond keys show mywallet
+
+- address: xion1l3r75pkwlg2fmasn9lk8umda0pjnjy7cq0x9gz
+  name: mywallet
+  pubkey: '{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"A20kOEVZuZxVGdQiFExGsO7fO+4B+QbTRJYhvaRSMkWy"}'
+  type: local
